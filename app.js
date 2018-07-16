@@ -13,9 +13,9 @@
 
 //delete a book - event bubbling this is more interactive as when we add a new book we do not have to add again a eventlistener to that button.
 
-var btns = document.querySelector('#book-list ul');
+var booklist = document.querySelector('#book-list ul');
 
-btns.addEventListener('click',function(e){
+booklist.addEventListener('click',function(e){
 	if(e.target.className=='delete')
 	{
 		const li = e.target.parentNode;
